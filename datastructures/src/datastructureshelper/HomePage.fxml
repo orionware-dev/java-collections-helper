@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.ScrollPane?>
+	
+    
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="datastructureshelper.HomePageController">
+    <children>
+        <Group id="question.1.group">
+            <children>
+                <Text text="Do you need list, mapping or queue of elements?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup1" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.1.button.1" text="List" toggleGroup="$radioButtonsGroup1" onAction="#question1Button1EventHandler"/>
+                        <RadioButton id="question.1.button.2" text="Mapping" toggleGroup="$radioButtonsGroup1" onAction="#question1Button2EventHandler"/>
+                        <RadioButton id="question.1.button.3" text="Queue" toggleGroup="$radioButtonsGroup1" onAction="#question1Button3EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.2.group">
+            <children>
+                <Text text="Do you need unique elements?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup2" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.2.button.1" text="Yes" toggleGroup="$radioButtonsGroup2" onAction="#question2Button1EventHandler"/>
+                        <RadioButton id="question.2.button.2" text="No" toggleGroup="$radioButtonsGroup2" onAction="#question2Button2EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.3.group">
+            <children>
+                <Text text="Do you need (un)sorted and/or (un)ordered elements?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup3" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.3.button.1" text="Sorted" toggleGroup="$radioButtonsGroup3" onAction="#question3Button1EventHandler"/>
+                        <RadioButton id="question.3.button.2" text="Ordered" toggleGroup="$radioButtonsGroup3" onAction="#question3Button2EventHandler"/>
+                        <RadioButton id="question.3.button.3" text="Unsorted + unordered" toggleGroup="$radioButtonsGroup3" onAction="#question3Button3EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.4.group">
+            <children>
+                <Text text="Do you need concurrency?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup4" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.4.button.1" text="Yes" toggleGroup="$radioButtonsGroup4" onAction="#question4Button1EventHandler"/>
+                        <RadioButton id="question.4.button.2" text="No" toggleGroup="$radioButtonsGroup4" onAction="#question4Button2EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.5.group">
+            <children>
+                <Text text="Do you need reverse iteration?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup5" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.5.button.1" text="Yes" toggleGroup="$radioButtonsGroup5" onAction="#question5Button1EventHandler"/>
+                        <RadioButton id="question.5.button.2" text="No" toggleGroup="$radioButtonsGroup5" onAction="#question5Button2EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.6.group">
+            <children>
+                <Text text="Do you need a queue with double-ended add/remove?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup6" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.6.button.1" text="Yes" toggleGroup="$radioButtonsGroup6" onAction="#question6Button1EventHandler"/>
+                        <RadioButton id="question.6.button.2" text="No" toggleGroup="$radioButtonsGroup6" onAction="#question6Button2EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.7.group">
+            <children>
+                <Text text="Do you prefer fast searching or fast add/remove?"/>
+                
+                
+                <FlowPane>
+                    <children>
+                        <fx:define>
+                            <ToggleGroup fx:id="radioButtonsGroup7" />
+                        </fx:define>
+                        
+                        <RadioButton id="question.7.button.1" text="Fast Searching" toggleGroup="$radioButtonsGroup7" onAction="#question7Button1EventHandler"/>
+                        <RadioButton id="question.7.button.2" text="Fast Add/Remove" toggleGroup="$radioButtonsGroup7" onAction="#question7Button2EventHandler"/>
+                    </children>
+                </FlowPane>
+            </children>
+        </Group>
+        
+        
+        <Group id="question.8.group">
+            <children>
+                <Button id="show.results.button" text="Show Data Structures" onAction="#showResultsEventHandler"/>
+            </children>
+        </Group>
+        
+        
+        <Group id="results.group">
+            <children>
+                <Text id="results" text=""/>
+            </children>
+        </Group>
+    </children>
+</VBox>
